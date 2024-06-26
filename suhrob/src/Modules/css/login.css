@@ -1,0 +1,125 @@
+:root {
+    --Red: #FC4747;
+    --Dark-Blue: #10141E;
+    --Greyish-Blue: #5A698F;
+    --Semi-Dark-Blue: #161D2F;
+    --Pure-White: #FFFFFF;
+    --outfit: "Outfit";
+}
+
+.logo-img {
+    display: block;
+    width: 32px;
+    height: 25.6px;
+    margin-left: 200px;
+   position: absolute;
+   top: 20px;
+}
+
+.login-box {
+    width: 400px;
+    height: 373px;
+    border-radius: 20px;
+    background: var(--Semi-Dark-Blue);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    position: relative;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  
+}
+
+.login-box__title {
+    color: var(--Pure-White);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+
+
+input[type="email"],
+[type="password"] {
+    width: 336px;
+    height: 50px;
+    background: transparent;
+    border: unset;
+    border-bottom: 1px solid var(--Greyish-Blue);
+    outline: none;
+    padding: 0px 16px;
+    color: var(--Pure-White);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input::placeholder {
+    color: var(--Pure-White);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.5;
+    padding: 0px 0px 18px 0px;
+}
+
+input:focus {
+    background: transparent;
+    border-bottom-color: var(--Pure-White);
+}
+
+input[type="submit"] {
+    color: var(--Pure-White);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 14px 96.5px;
+    border-radius: 6px;
+    background: var(--Red);
+    border: unset;
+    transition: .5s;
+}
+
+input[type="submit"]:hover {
+    background: var(--Pure-White);
+    color: var(--Semi-Dark-Blue);
+    cursor: pointer;
+}
+
+span {
+    text-align: center;
+    color: var(--Pure-White);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.link {
+    margin-left: 9px;
+    color: var(--Red);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: end;
+    justify-content: center;
+}
+
+.input-field span {
+    color: var(--Red);
+    padding-right: 17px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+}
+@media(max-width:375px) {
+    .login-box{
+        background-color: red;
+    }
+}
